@@ -37,7 +37,7 @@
         self.scoreLabel.zPosition = 100;
         
         [self addChild:self.scoreLabel];
-        
+            
         SKAction *tempAction = [SKAction runBlock:^{
             self.scoreLabel.text = [NSString stringWithFormat:@"%3.0f", self.score];
         }];
@@ -134,7 +134,7 @@
 - (void) didMoveToView:(SKView *)view
 {
     UILongPressGestureRecognizer *tapper = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(tappedScreen:)];
-    tapper.minimumPressDuration = 0.1;
+    tapper.minimumPressDuration = 0.05;
     [view addGestureRecognizer:tapper];
 }
 

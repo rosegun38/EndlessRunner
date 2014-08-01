@@ -40,6 +40,7 @@
 
 -(void) newGame
 {
+    [self.musicPlayer stop];
     ERGMyScene *newScene = [[ERGMyScene alloc] initWithSize:self.size];
     SKTransition *transition = [SKTransition flipHorizontalWithDuration:0.5];
     [self.view presentScene:newScene transition:transition];

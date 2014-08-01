@@ -276,7 +276,7 @@
 				ORGANIZATIONNAME = "Dmitry Volevodz";
 				TargetAttributes = {
 					E582CAF4181AF96700BE75A2 = {
-						DevelopmentTeam = V42V5U7R2F;
+						DevelopmentTeam = G8F4LVF8MK;
 					};
 					E582CB1C181AF96700BE75A2 = {
 						TestTargetID = E582CAF4181AF96700BE75A2;
