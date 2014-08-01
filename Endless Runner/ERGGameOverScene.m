@@ -24,7 +24,7 @@
         self.scoreLabel.fontSize = 15;
         self.scoreLabel.color = [UIColor redColor];
         self.scoreLabel.position = CGPointMake(self.size.width / 2, 80);
-        self.scoreLabel.text = [NSString stringWithFormat:@"You can do better, Erin"];
+        self.scoreLabel.text = [NSString stringWithFormat:@"You can do better"];
         [self addChild:self.scoreLabel];
         [self setupMusic];
     }
