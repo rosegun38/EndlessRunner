@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96D6A768198B39130024F4DB /* jet.sks in Resources */ = {isa = PBXBuildFile; fileRef = 96D6A766198B39130024F4DB /* jet.sks */; };
+		96D6A769198B39130024F4DB /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 96D6A767198B39130024F4DB /* spark.png */; };
+		96D6A76C198B3F210024F4DB /* ERGEnemy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D6A76B198B3F210024F4DB /* ERGEnemy.m */; };
+		96D6A76F198B42B70024F4DB /* ERGPowerup.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D6A76E198B42B70024F4DB /* ERGPowerup.m */; };
+		96D6A771198B4DE40024F4DB /* enemy.sks in Resources */ = {isa = PBXBuildFile; fileRef = 96D6A770198B4DE40024F4DB /* enemy.sks */; };
+		96D6A773198B4ED40024F4DB /* powerup.sks in Resources */ = {isa = PBXBuildFile; fileRef = 96D6A772198B4ED40024F4DB /* powerup.sks */; };
+		96D6A776198B67CC0024F4DB /* ERGGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D6A775198B67CC0024F4DB /* ERGGameOverScene.m */; };
+		96D6A77A198B71580024F4DB /* background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96D6A777198B71580024F4DB /* background.mp3 */; };
+		96D6A77B198B71580024F4DB /* crash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 96D6A778198B71580024F4DB /* crash.wav */; };
+		96D6A77C198B71580024F4DB /* powerup.wav in Resources */ = {isa = PBXBuildFile; fileRef = 96D6A779198B71580024F4DB /* powerup.wav */; };
+		96D6A77E198B753B0024F4DB /* smashed.wav in Resources */ = {isa = PBXBuildFile; fileRef = 96D6A77D198B753B0024F4DB /* smashed.wav */; };
+		96D6A780198B78150024F4DB /* end.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96D6A77F198B78150024F4DB /* end.mp3 */; };
+		E582CAF9181AF96700BE75A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E582CAF8181AF96700BE75A2 /* Foundation.framework */; };
+		E582CAFB181AF96700BE75A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E582CAFA181AF96700BE75A2 /* CoreGraphics.framework */; };
+		E582CAFD181AF96700BE75A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E582CAFC181AF96700BE75A2 /* UIKit.framework */; };
+		E582CAFF181AF96700BE75A2 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E582CAFE181AF96700BE75A2 /* SpriteKit.framework */; };
+		E582CB05181AF96700BE75A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E582CB03181AF96700BE75A2 /* InfoPlist.strings */; };
+		E582CB07181AF96700BE75A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E582CB06181AF96700BE75A2 /* main.m */; };
+		E582CB0B181AF96700BE75A2 /* ERGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E582CB0A181AF96700BE75A2 /* ERGAppDelegate.m */; };
+		E582CB0E181AF96700BE75A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E582CB0C181AF96700BE75A2 /* Main.storyboard */; };
+		E582CB11181AF96700BE75A2 /* ERGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E582CB10181AF96700BE75A2 /* ERGViewController.m */; };
+		E582CB14181AF96700BE75A2 /* ERGMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = E582CB13181AF96700BE75A2 /* ERGMyScene.m */; };
+		E582CB18181AF96700BE75A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E582CB17181AF96700BE75A2 /* Images.xcassets */; };
+		E582CB1F181AF96700BE75A2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E582CB1E181AF96700BE75A2 /* XCTest.framework */; };
+		E582CB20181AF96700BE75A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E582CAF8181AF96700BE75A2 /* Foundation.framework */; };
+		E582CB21181AF96700BE75A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E582CAFC181AF96700BE75A2 /* UIKit.framework */; };
+		E582CB29181AF96700BE75A2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E582CB27181AF96700BE75A2 /* InfoPlist.strings */; };
+		E582CB2B181AF96700BE75A2 /* Endless_RunnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E582CB2A181AF96700BE75A2 /* Endless_RunnerTests.m */; };
+		E582CB36181B1D7600BE75A2 /* ERGBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = E582CB35181B1D7600BE75A2 /* ERGBackground.m */; };
+		E582CB3A181B2DE200BE75A2 /* ERGPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E582CB39181B2DE200BE75A2 /* ERGPlayer.m */; };
+		E5BABC741822EC3D00AD9B6D /* jump.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E5BABC711822EC3D00AD9B6D /* jump.atlas */; };
+		E5BABC751822EC3D00AD9B6D /* run.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E5BABC721822EC3D00AD9B6D /* run.atlas */; };
+		E5BABC761822EC3D00AD9B6D /* shield.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E5BABC731822EC3D00AD9B6D /* shield.atlas */; };
+		E5BABC7818233BFC00AD9B6D /* deplete.atlas in Resources */ = {isa = PBXBuildFile; fileRef = E5BABC7718233BFC00AD9B6D /* deplete.atlas */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E582CB22181AF96700BE75A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E582CAED181AF96700BE75A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E582CAF4181AF96700BE75A2;
+			remoteInfo = "Endless Runner";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		96D6A766198B39130024F4DB /* jet.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = jet.sks; sourceTree = "<group>"; };
+		96D6A767198B39130024F4DB /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		96D6A76A198B3F210024F4DB /* ERGEnemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERGEnemy.h; sourceTree = "<group>"; };
+		96D6A76B198B3F210024F4DB /* ERGEnemy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERGEnemy.m; sourceTree = "<group>"; };
+		96D6A76D198B42B70024F4DB /* ERGPowerup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERGPowerup.h; sourceTree = "<group>"; };
+		96D6A76E198B42B70024F4DB /* ERGPowerup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERGPowerup.m; sourceTree = "<group>"; };
+		96D6A770198B4DE40024F4DB /* enemy.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = enemy.sks; sourceTree = "<group>"; };
+		96D6A772198B4ED40024F4DB /* powerup.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = powerup.sks; sourceTree = "<group>"; };
+		96D6A774198B67CC0024F4DB /* ERGGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERGGameOverScene.h; sourceTree = "<group>"; };
+		96D6A775198B67CC0024F4DB /* ERGGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERGGameOverScene.m; sourceTree = "<group>"; };
+		96D6A777198B71580024F4DB /* background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = background.mp3; sourceTree = "<group>"; };
+		96D6A778198B71580024F4DB /* crash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crash.wav; sourceTree = "<group>"; };
+		96D6A779198B71580024F4DB /* powerup.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = powerup.wav; sourceTree = "<group>"; };
+		96D6A77D198B753B0024F4DB /* smashed.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = smashed.wav; sourceTree = "<group>"; };
+		96D6A77F198B78150024F4DB /* end.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = end.mp3; sourceTree = "<group>"; };
+		E582CAF5181AF96700BE75A2 /* Endless Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Endless Runner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E582CAF8181AF96700BE75A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E582CAFA181AF96700BE75A2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E582CAFC181AF96700BE75A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E582CAFE181AF96700BE75A2 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		E582CB02181AF96700BE75A2 /* Endless Runner-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Endless Runner-Info.plist"; sourceTree = "<group>"; };
+		E582CB04181AF96700BE75A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E582CB06181AF96700BE75A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E582CB08181AF96700BE75A2 /* Endless Runner-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Endless Runner-Prefix.pch"; sourceTree = "<group>"; };
+		E582CB09181AF96700BE75A2 /* ERGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERGAppDelegate.h; sourceTree = "<group>"; };
+		E582CB0A181AF96700BE75A2 /* ERGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERGAppDelegate.m; sourceTree = "<group>"; };
+		E582CB0D181AF96700BE75A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E582CB0F181AF96700BE75A2 /* ERGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERGViewController.h; sourceTree = "<group>"; };
+		E582CB10181AF96700BE75A2 /* ERGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERGViewController.m; sourceTree = "<group>"; };
+		E582CB12181AF96700BE75A2 /* ERGMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ERGMyScene.h; sourceTree = "<group>"; };
+		E582CB13181AF96700BE75A2 /* ERGMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ERGMyScene.m; sourceTree = "<group>"; };
+		E582CB17181AF96700BE75A2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E582CB1D181AF96700BE75A2 /* Endless RunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Endless RunnerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E582CB1E181AF96700BE75A2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E582CB26181AF96700BE75A2 /* Endless RunnerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Endless RunnerTests-Info.plist"; sourceTree = "<group>"; };
+		E582CB28181AF96700BE75A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E582CB2A181AF96700BE75A2 /* Endless_RunnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Endless_RunnerTests.m; sourceTree = "<group>"; };
+		E582CB34181B1D7500BE75A2 /* ERGBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERGBackground.h; sourceTree = "<group>"; };
+		E582CB35181B1D7600BE75A2 /* ERGBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERGBackground.m; sourceTree = "<group>"; };
+		E582CB37181B1E5000BE75A2 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		E582CB38181B2DE200BE75A2 /* ERGPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERGPlayer.h; sourceTree = "<group>"; };
+		E582CB39181B2DE200BE75A2 /* ERGPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERGPlayer.m; sourceTree = "<group>"; };
+		E5BABC711822EC3D00AD9B6D /* jump.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = jump.atlas; sourceTree = "<group>"; };
+		E5BABC721822EC3D00AD9B6D /* run.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = run.atlas; sourceTree = "<group>"; };
+		E5BABC731822EC3D00AD9B6D /* shield.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = shield.atlas; sourceTree = "<group>"; };
+		E5BABC7718233BFC00AD9B6D /* deplete.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = deplete.atlas; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E582CAF2181AF96700BE75A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E582CAFB181AF96700BE75A2 /* CoreGraphics.framework in Frameworks */,
+				E582CAFD181AF96700BE75A2 /* UIKit.framework in Frameworks */,
+				E582CAFF181AF96700BE75A2 /* SpriteKit.framework in Frameworks */,
+				E582CAF9181AF96700BE75A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E582CB1A181AF96700BE75A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E582CB1F181AF96700BE75A2 /* XCTest.framework in Frameworks */,
+				E582CB21181AF96700BE75A2 /* UIKit.framework in Frameworks */,
+				E582CB20181AF96700BE75A2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E582CAEC181AF96700BE75A2 = {
+			isa = PBXGroup;
+			children = (
+				E582CB00181AF96700BE75A2 /* Endless Runner */,
+				E582CB24181AF96700BE75A2 /* Endless RunnerTests */,
+				E582CAF7181AF96700BE75A2 /* Frameworks */,
+				E582CAF6181AF96700BE75A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E582CAF6181AF96700BE75A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E582CAF5181AF96700BE75A2 /* Endless Runner.app */,
+				E582CB1D181AF96700BE75A2 /* Endless RunnerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E582CAF7181AF96700BE75A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E582CAF8181AF96700BE75A2 /* Foundation.framework */,
+				E582CAFA181AF96700BE75A2 /* CoreGraphics.framework */,
+				E582CAFC181AF96700BE75A2 /* UIKit.framework */,
+				E582CAFE181AF96700BE75A2 /* SpriteKit.framework */,
+				E582CB1E181AF96700BE75A2 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E582CB00181AF96700BE75A2 /* Endless Runner */ = {
+			isa = PBXGroup;
+			children = (
+				E5BABC7718233BFC00AD9B6D /* deplete.atlas */,
+				E5BABC711822EC3D00AD9B6D /* jump.atlas */,
+				E5BABC721822EC3D00AD9B6D /* run.atlas */,
+				E5BABC731822EC3D00AD9B6D /* shield.atlas */,
+				E582CB37181B1E5000BE75A2 /* Common.h */,
+				96D6A76A198B3F210024F4DB /* ERGEnemy.h */,
+				96D6A76B198B3F210024F4DB /* ERGEnemy.m */,
+				96D6A76D198B42B70024F4DB /* ERGPowerup.h */,
+				96D6A76E198B42B70024F4DB /* ERGPowerup.m */,
+				E582CB09181AF96700BE75A2 /* ERGAppDelegate.h */,
+				96D6A77F198B78150024F4DB /* end.mp3 */,
+				E582CB0A181AF96700BE75A2 /* ERGAppDelegate.m */,
+				96D6A777198B71580024F4DB /* background.mp3 */,
+				96D6A77D198B753B0024F4DB /* smashed.wav */,
+				96D6A778198B71580024F4DB /* crash.wav */,
+				96D6A779198B71580024F4DB /* powerup.wav */,
+				96D6A766198B39130024F4DB /* jet.sks */,
+				96D6A767198B39130024F4DB /* spark.png */,
+				E582CB0C181AF96700BE75A2 /* Main.storyboard */,
+				E582CB0F181AF96700BE75A2 /* ERGViewController.h */,
+				E582CB10181AF96700BE75A2 /* ERGViewController.m */,
+				E582CB12181AF96700BE75A2 /* ERGMyScene.h */,
+				E582CB13181AF96700BE75A2 /* ERGMyScene.m */,
+				96D6A774198B67CC0024F4DB /* ERGGameOverScene.h */,
+				96D6A775198B67CC0024F4DB /* ERGGameOverScene.m */,
+				96D6A772198B4ED40024F4DB /* powerup.sks */,
+				96D6A770198B4DE40024F4DB /* enemy.sks */,
+				E582CB34181B1D7500BE75A2 /* ERGBackground.h */,
+				E582CB35181B1D7600BE75A2 /* ERGBackground.m */,
+				E582CB38181B2DE200BE75A2 /* ERGPlayer.h */,
+				E582CB39181B2DE200BE75A2 /* ERGPlayer.m */,
+				E582CB17181AF96700BE75A2 /* Images.xcassets */,
+				E582CB01181AF96700BE75A2 /* Supporting Files */,
+			);
+			path = "Endless Runner";
+			sourceTree = "<group>";
+		};
+		E582CB01181AF96700BE75A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E582CB02181AF96700BE75A2 /* Endless Runner-Info.plist */,
+				E582CB03181AF96700BE75A2 /* InfoPlist.strings */,
+				E582CB06181AF96700BE75A2 /* main.m */,
+				E582CB08181AF96700BE75A2 /* Endless Runner-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E582CB24181AF96700BE75A2 /* Endless RunnerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E582CB2A181AF96700BE75A2 /* Endless_RunnerTests.m */,
+				E582CB25181AF96700BE75A2 /* Supporting Files */,
+			);
+			path = "Endless RunnerTests";
+			sourceTree = "<group>";
+		};
+		E582CB25181AF96700BE75A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E582CB26181AF96700BE75A2 /* Endless RunnerTests-Info.plist */,
+				E582CB27181AF96700BE75A2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E582CAF4181AF96700BE75A2 /* Endless Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E582CB2E181AF96700BE75A2 /* Build configuration list for PBXNativeTarget "Endless Runner" */;
+			buildPhases = (
+				E582CAF1181AF96700BE75A2 /* Sources */,
+				E582CAF2181AF96700BE75A2 /* Frameworks */,
+				E582CAF3181AF96700BE75A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Endless Runner";
+			productName = "Endless Runner";
+			productReference = E582CAF5181AF96700BE75A2 /* Endless Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E582CB1C181AF96700BE75A2 /* Endless RunnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E582CB31181AF96700BE75A2 /* Build configuration list for PBXNativeTarget "Endless RunnerTests" */;
+			buildPhases = (
+				E582CB19181AF96700BE75A2 /* Sources */,
+				E582CB1A181AF96700BE75A2 /* Frameworks */,
+				E582CB1B181AF96700BE75A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E582CB23181AF96700BE75A2 /* PBXTargetDependency */,
+			);
+			name = "Endless RunnerTests";
+			productName = "Endless RunnerTests";
+			productReference = E582CB1D181AF96700BE75A2 /* Endless RunnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E582CAED181AF96700BE75A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ERG;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Dmitry Volevodz";
+				TargetAttributes = {
+					E582CAF4181AF96700BE75A2 = {
+						DevelopmentTeam = V42V5U7R2F;
+					};
+					E582CB1C181AF96700BE75A2 = {
+						TestTargetID = E582CAF4181AF96700BE75A2;
+					};
+				};
+			};
+			buildConfigurationList = E582CAF0181AF96700BE75A2 /* Build configuration list for PBXProject "Endless Runner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E582CAEC181AF96700BE75A2;
+			productRefGroup = E582CAF6181AF96700BE75A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E582CAF4181AF96700BE75A2 /* Endless Runner */,
+				E582CB1C181AF96700BE75A2 /* Endless RunnerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E582CAF3181AF96700BE75A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E582CB05181AF96700BE75A2 /* InfoPlist.strings in Resources */,
+				96D6A769198B39130024F4DB /* spark.png in Resources */,
+				96D6A768198B39130024F4DB /* jet.sks in Resources */,
+				96D6A77B198B71580024F4DB /* crash.wav in Resources */,
+				E5BABC741822EC3D00AD9B6D /* jump.atlas in Resources */,
+				96D6A77A198B71580024F4DB /* background.mp3 in Resources */,
+				96D6A773198B4ED40024F4DB /* powerup.sks in Resources */,
+				96D6A77C198B71580024F4DB /* powerup.wav in Resources */,
+				E582CB18181AF96700BE75A2 /* Images.xcassets in Resources */,
+				E5BABC751822EC3D00AD9B6D /* run.atlas in Resources */,
+				96D6A771198B4DE40024F4DB /* enemy.sks in Resources */,
+				96D6A77E198B753B0024F4DB /* smashed.wav in Resources */,
+				96D6A780198B78150024F4DB /* end.mp3 in Resources */,
+				E5BABC761822EC3D00AD9B6D /* shield.atlas in Resources */,
+				E5BABC7818233BFC00AD9B6D /* deplete.atlas in Resources */,
+				E582CB0E181AF96700BE75A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E582CB1B181AF96700BE75A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E582CB29181AF96700BE75A2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E582CAF1181AF96700BE75A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96D6A76C198B3F210024F4DB /* ERGEnemy.m in Sources */,
+				E582CB07181AF96700BE75A2 /* main.m in Sources */,
+				E582CB14181AF96700BE75A2 /* ERGMyScene.m in Sources */,
+				E582CB0B181AF96700BE75A2 /* ERGAppDelegate.m in Sources */,
+				E582CB3A181B2DE200BE75A2 /* ERGPlayer.m in Sources */,
+				E582CB36181B1D7600BE75A2 /* ERGBackground.m in Sources */,
+				96D6A776198B67CC0024F4DB /* ERGGameOverScene.m in Sources */,
+				E582CB11181AF96700BE75A2 /* ERGViewController.m in Sources */,
+				96D6A76F198B42B70024F4DB /* ERGPowerup.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E582CB19181AF96700BE75A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E582CB2B181AF96700BE75A2 /* Endless_RunnerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E582CB23181AF96700BE75A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E582CAF4181AF96700BE75A2 /* Endless Runner */;
+			targetProxy = E582CB22181AF96700BE75A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E582CB03181AF96700BE75A2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E582CB04181AF96700BE75A2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E582CB0C181AF96700BE75A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E582CB0D181AF96700BE75A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E582CB27181AF96700BE75A2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E582CB28181AF96700BE75A2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E582CB2C181AF96700BE75A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E582CB2D181AF96700BE75A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E582CB2F181AF96700BE75A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Endless Runner/Endless Runner-Prefix.pch";
+				INFOPLIST_FILE = "Endless Runner/Endless Runner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E582CB30181AF96700BE75A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Endless Runner/Endless Runner-Prefix.pch";
+				INFOPLIST_FILE = "Endless Runner/Endless Runner-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E582CB32181AF96700BE75A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Endless Runner.app/Endless Runner";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Endless Runner/Endless Runner-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Endless RunnerTests/Endless RunnerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E582CB33181AF96700BE75A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Endless Runner.app/Endless Runner";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Endless Runner/Endless Runner-Prefix.pch";
+				INFOPLIST_FILE = "Endless RunnerTests/Endless RunnerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E582CAF0181AF96700BE75A2 /* Build configuration list for PBXProject "Endless Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E582CB2C181AF96700BE75A2 /* Debug */,
+				E582CB2D181AF96700BE75A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E582CB2E181AF96700BE75A2 /* Build configuration list for PBXNativeTarget "Endless Runner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E582CB2F181AF96700BE75A2 /* Debug */,
+				E582CB30181AF96700BE75A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E582CB31181AF96700BE75A2 /* Build configuration list for PBXNativeTarget "Endless RunnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E582CB32181AF96700BE75A2 /* Debug */,
+				E582CB33181AF96700BE75A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E582CAED181AF96700BE75A2 /* Project object */;
+}
