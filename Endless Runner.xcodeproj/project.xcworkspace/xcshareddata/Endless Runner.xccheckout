@@ -10,29 +10,29 @@
 	<string>Endless Runner</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>AD3C8E3A-D74B-4847-9820-8E421E09C81E</key>
+		<key>87D711BE2135473CB97EE38035EA553EBA73EA17</key>
 		<string>https://github.com/rosegun38/EndlessRunner.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Endless Runner.xcodeproj/project.xcworkspace</string>
+	<string>Endless Runner.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>AD3C8E3A-D74B-4847-9820-8E421E09C81E</key>
+		<key>87D711BE2135473CB97EE38035EA553EBA73EA17</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/rosegun38/EndlessRunner.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>AD3C8E3A-D74B-4847-9820-8E421E09C81E</string>
+	<string>87D711BE2135473CB97EE38035EA553EBA73EA17</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>AD3C8E3A-D74B-4847-9820-8E421E09C81E</string>
+			<string>87D711BE2135473CB97EE38035EA553EBA73EA17</string>
 			<key>IDESourceControlWCCName</key>
 			<string>EndlessRunner</string>
 		</dict>
